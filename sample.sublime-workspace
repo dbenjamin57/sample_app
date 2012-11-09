@@ -32,7 +32,9 @@
 	},
 	"file_history":
 	[
+		"/home/dan/rails_projects/first_app/public/hello.html",
 		"/home/dan/rails_projects/sample_app/Gemfile",
+		"/home/dan/rails_projects/sample_app/README.md",
 		"/home/dan/rails_projects/demo_app/app/models/micropost.rb",
 		"/home/dan/rails_projects/demo_app/app/controllers/users_controller.rb",
 		"/home/dan/rails_projects/demo_app/app/models/user.rb",
@@ -136,6 +138,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"gem",
+				"Gemfile"
+			],
 			[
 				"user",
 				"app/controllers/users_controller.rb"
