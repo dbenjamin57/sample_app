@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  name            :string(255)
+#  email           :string(255)
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  password_digest :string(255)
+#
+
 require 'spec_helper'
 
 describe User do
@@ -14,6 +26,8 @@ describe User do
 	it { should respond_to(:password_digest) }
 	it { should respond_to(:password) }
 	it { should respond_to(:password_confirmation) }
+	it { should respond_to(:remember_token) }
+	it { should respond_to(:authenticate) }
 
 	it { should be_valid }
 
@@ -36,49 +50,49 @@ describe User do
 	# EMAIL TESTING #
 	describe "when email format is invalid" do
 		invalid_addresses = %w[user@foo,com user_at_foo.org example.user@foo.
-							  foo@bar_baz.com foo@bar+baz.com]
-		invalid_addresses.each do |invalid_address|
-			before { @user.email = invalid_address }
+			foo@bar_baz.com foo@bar+baz.com]
+			invalid_addresses.each do |invalid_address|
+				before { @user.email = invalid_address }
+				it { should_not be_valid }
+			end
+		end
+
+		describe "when email format is valid" do
+			valid_addresses = %w[user@foo.com A_USER@f.b.org frst.lst@foo.jp a+b@baz.cn]
+			valid_addresses.each do |valid_address|
+				before { @user.email = valid_address }
+				it { should be_valid }
+			end
+		end
+
+		describe "when email address is already taken" do
+			before do
+				user_with_same_email = @user.dup
+				user_with_same_email.save
+			end
+
 			it { should_not be_valid }
 		end
-	end
 
-	describe "when email format is valid" do
-		valid_addresses = %w[user@foo.com A_USER@f.b.org frst.lst@foo.jp a+b@baz.cn]
-		valid_addresses.each do |valid_address|
-			before { @user.email = valid_address }
-			it { should be_valid }
-		end
-	end
+		describe "when email address is already taken" do
+			before do
+				user_with_same_email = @user.dup
+				user_with_same_email.email = @user.email.upcase
+				user_with_same_email.save
+			end
 
-	describe "when email address is already taken" do
-		before do
-			user_with_same_email = @user.dup
-			user_with_same_email.save
+			it { should_not be_valid }
 		end
 
-		it { should_not be_valid }
-	end
+		describe "email address with mixed case" do
+			let(:mixed_case_email) { "Foo@ExAMPle.CoM" }
 
-	describe "when email address is already taken" do
-		before do
-			user_with_same_email = @user.dup
-			user_with_same_email.email = @user.email.upcase
-			user_with_same_email.save
+			it "should be saved as all lower-case" do
+				@user.email = mixed_case_email
+				@user.save
+				@user.reload.email.should == mixed_case_email.downcase
+			end
 		end
-
-		it { should_not be_valid }
-	end
-
-	describe "email address with mixed case" do
-		let(:mixed_case_email) { "Foo@ExAMPle.CoM" }
-		
-		it "should be saved as all lower-case" do
-			@user.email = mixed_case_email
-			@user.save
-			@user.reload.email.should == mixed_case_email.downcase
-		end
-	end
 
 	# PASSWORD TESTING #
 	describe "when password is not present" do
@@ -116,5 +130,11 @@ describe User do
 			it { should_not == user_for_invalid_password }
 			specify { user_for_invalid_password.should be_false }
 		end
+	end
+
+	# Token testing (user sign in)
+	describe "remember token" do
+		before { @user.save }
+		its(:remember_token) { should_not be_blank }
 	end
 end

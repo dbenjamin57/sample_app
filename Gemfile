@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'bootstrap-sass', '2.0.4'
-gem 'bcrypt-ruby', '3.0.1'
-gem 'rails-i18n'
+gem 'bcrypt-ruby', '3.0.1' #encryption for has secure method
+gem 'rails-i18n' # il8n
 
 group :development, :test do
 	gem 'sqlite3', '1.3.5'
@@ -22,7 +22,7 @@ group :assets do
 end
 
 group :development do
-gem 'annotate', '2.5.0'
+	gem 'annotate', '2.5.0' 
 end
 
 gem 'jquery-rails', '2.0.2'
@@ -32,6 +32,9 @@ group :test do
 	gem 'rb-inotify', '0.8.8'
 	gem 'libnotify', '0.5.9'
 	gem 'factory_girl_rails', '4.1.0'
+	gem 'launchy', '2.1.0'
+	gem 'cucumber-rails', '1.2.1', :require => false
+	gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
