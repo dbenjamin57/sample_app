@@ -3,22 +3,22 @@
 
 <div class="row">
 	<div class="span6 offset5">
-		</p></p> <!-- added by me -->
+	</p></p> <!-- added by me -->
 
-		<%= form_for(:session, url: sessions_path) do |f| %>
-		
-		<%= f.label :email %>
-		<%= f.text_field :email %>
-		
-		<%= f.label :password %>
-		<%= f.password_field :password %>
-		
-		</p> <!-- added by me -->
+	<%= form_tag sessions_path do %>
 
-		<%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
-		
-		<% end %>
-		
-		<p>New user? <%= link_to "Sign up now!", signup_path %></p>
-	</div>
+	<%= label_tag :email %>
+	<%= text_field_tag :email, params[:email] %>
+
+	<%= label_tag :password %>
+	<%= password_field_tag :password %>
+
+	</p> <!-- added by me -->
+
+	<%= submit_tag "Sign in", class: "btn btn-large btn-primary" %>
+
+	<% end %>
+
+	<p>New user? <%= link_to "Sign up now!", signup_path %></p>
+</div>
 </div>
