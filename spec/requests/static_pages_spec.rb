@@ -32,7 +32,6 @@ describe "Static pages" do
 		let(:heading) { 'About' }
 		let(:page_title) { 'About' }
 		it_should_behave_like "all static pages"
-
 	end
 
 	describe "Contact page" do
@@ -42,7 +41,6 @@ describe "Static pages" do
 		let(:page_title) { 'Contact' }
 		it_should_behave_like "all static pages"
 	end
-
 
 	it "should have the right links on the layout" do
 		visit root_path
