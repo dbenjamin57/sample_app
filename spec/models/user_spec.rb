@@ -27,7 +27,7 @@ describe User do
 
 		it { should respond_to(:name) }
 		it { should respond_to(:email) }
-		it { should respond_to(:password_digest) }
+		it { should respond_to(:password_digest) }		
 		it { should respond_to(:password) }
 		it { should respond_to(:password_confirmation) }
 		it { should respond_to(:remember_token) }
@@ -37,6 +37,12 @@ describe User do
 
 		it { should be_valid }
 		it { should_not be_admin}
+
+		it "should not allow access to admin" do
+			expect do
+				User.new(admin: "1")
+			end.to raise_error(ActiveModel::MassAssignmentSecurity::Error)
+		end
 	end
 
 	describe "Name Testing" do
