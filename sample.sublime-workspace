@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"new",
+				"newer_micropost"
+			],
+			[
+				"rei",
+				"redirect_to"
+			],
+			[
 				"password",
 				"password_confirmation"
 			],
@@ -28,34 +36,42 @@
 	"buffers":
 	[
 		{
-			"file": "features/signing_in.feature",
+			"file": "spec/models/micropost_spec.rb",
 			"settings":
 			{
-				"buffer_size": 386,
+				"buffer_size": 1158,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/helpers/application_helper.rb",
+			"file": "spec/models/user_spec.rb",
 			"settings":
 			{
-				"buffer_size": 517,
+				"buffer_size": 4896,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "features/step_definitions/authentication_steps.rb",
+			"file": "spec/factories.rb",
 			"settings":
 			{
-				"buffer_size": 776,
+				"buffer_size": 298,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spec/requests/authentication_pages_spec.rb",
+			"file": "app/models/micropost.rb",
 			"settings":
 			{
-				"buffer_size": 1082,
+				"buffer_size": 486,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/user.rb",
+			"settings":
+			{
+				"buffer_size": 1059,
 				"line_ending": "Unix"
 			}
 		}
@@ -84,48 +100,57 @@
 	},
 	"file_history":
 	[
-		"/home/dan/rails_projects/sample_app/features/signing_in.feature",
-		"/home/dan/rails_projects/sample_app/Gemfile",
-		"/home/dan/rails_projects/sample_app/app/views/layouts/_header.html.erb",
-		"/home/dan/rails_projects/sample_app/app/models/user.rb",
+		"/home/dan/rails_projects/sample_app/spec/requests/user_pages_spec.rb",
+		"/home/dan/rails_projects/sample_app/spec/support/utilities.rb",
+		"/home/dan/rails_projects/sample_app/app/views/users/_fields.html.erb",
+		"/home/dan/rails_projects/sample_app/app/views/users/_user.html.erb",
+		"/home/dan/rails_projects/sample_app/db/migrate/20121219131653_create_microposts.rb",
+		"/home/dan/rails_projects/sample_app/app/views/users/index.html.erb",
+		"/home/dan/rails_projects/sample_app/app/views/layouts/application.html.erb",
+		"/home/dan/rails_projects/sample_app/app/views/static_pages/home.html.erb",
 		"/home/dan/rails_projects/sample_app/app/controllers/sessions_controller.rb",
 		"/home/dan/rails_projects/sample_app/app/controllers/users_controller.rb",
 		"/home/dan/rails_projects/sample_app/app/helpers/sessions_helper.rb",
-		"/home/dan/rails_projects/sample_app/spec/models/user_spec.rb",
 		"/home/dan/rails_projects/sample_app/spec/requests/authentication_pages_spec.rb",
+		"/home/dan/rails_projects/sample_app/app/helpers/application_helper.rb",
+		"/home/dan/rails_projects/sample_app/app/views/users/new.html.erb",
+		"/home/dan/rails_projects/sample_app/spec/models/user_spec.rb",
+		"/home/dan/rails_projects/sample_app/app/views/users/edit.html.erb",
 		"/home/dan/rails_projects/sample_app/spec/requests/static_pages_spec.rb",
-		"/home/dan/rails_projects/sample_app/spec/requests/user_pages_spec.rb",
+		"/home/dan/rails_projects/sample_app/app/models/user.rb",
+		"/home/dan/rails_projects/sample_app/app/views/sessions/new.html.erb",
+		"/home/dan/rails_projects/sample_app/app/views/layouts/_header.html.erb",
+		"/home/dan/rails_projects/sample_app/spec/factories.rb",
+		"/home/dan/rails_projects/sample_app/Gemfile",
+		"/home/dan/rails_projects/sample_app/lib/tasks/sample_data.rake",
+		"/home/dan/rails_projects/sample_app/db/migrate/20121218111352_add_admin_to_users.rb",
+		"/home/dan/rails_projects/sample_app/spec/helpers/application_helper_spec.rb",
+		"/home/dan/rails_projects/sample_app/app/assets/stylesheets/custom.css.scss",
+		"/home/dan/rails_projects/sample_app/features/step_definitions/authentication_steps.rb",
+		"/home/dan/rails_projects/sample_app/config/application.rb",
+		"/home/dan/rails_projects/sample_app/app/views/layouts/_footer.html.erb",
+		"/home/dan/rails_projects/sample_app/features/signing_in.feature",
+		"/home/dan/rails_projects/sample_app/app/views/layouts/_shim.html.erb",
+		"/home/dan/rails_projects/sample_app/app/views/shared/_error_messages.html.erb",
 		"/home/dan/rails_projects/sample_app/app/assets/javascripts/application.js",
 		"/home/dan/rails_projects/sample_app/app/controllers/application_controller.rb",
-		"/home/dan/rails_projects/sample_app/app/views/sessions/new.html.erb",
-		"/home/dan/rails_projects/sample_app/app/views/users/new.html.erb",
 		"/home/dan/rails_projects/sample_app/config/routes.rb",
 		"/home/dan/rails_projects/sample_app/db/migrate/20121204102214_add_remember_token_to_users.rb",
-		"/home/dan/rails_projects/sample_app/app/views/layouts/application.html.erb",
-		"/home/dan/rails_projects/sample_app/app/views/layouts/_shim.html.erb",
 		"/home/dan/rails_projects/sample_app/app/helpers/users_helper.rb",
 		"/home/dan/rails_projects/sample_app/app/views/users/show.html.erb",
 		"/home/dan/rails_projects/sample_app/config/locales/en.yml",
-		"/home/dan/rails_projects/sample_app/app/assets/stylesheets/custom.css.scss",
 		"/home/dan/rails_projects/sample_app/config/environments/production.rb",
-		"/home/dan/rails_projects/sample_app/app/views/shared/_error_messages.html.erb",
-		"/home/dan/rails_projects/sample_app/spec/factories.rb",
 		"/home/dan/rails_projects/sample_app/app/assets/stylesheets/custon.css.scss",
 		"/home/dan/rails_projects/sample_app/config/environments/test.rb",
 		"/home/dan/rails_projects/sample_app/db/migrate/20121126135128_create_users.rb",
 		"/home/dan/rails_projects/sample_app/db/migrate/20121127114750_add_password_digest_to_users.rb",
 		"/home/dan/rails_projects/sample_app/db/schema.rb",
 		"/home/dan/rails_projects/sample_app/db/migrate/20121127112434_add_index_to_users_email.rb",
-		"/home/dan/rails_projects/sample_app/app/views/static_pages/home.html.erb",
 		"/home/dan/rails_projects/sample_app/app/views/static_pages/contact.html.erb",
 		"/home/dan/rails_projects/sample_app/app/controllers/static_pages_controller.rb",
-		"/home/dan/rails_projects/sample_app/app/helpers/application_helper.rb",
-		"/home/dan/rails_projects/sample_app/spec/helpers/application_helper_spec.rb",
-		"/home/dan/rails_projects/sample_app/spec/support/utilities.rb",
 		"/home/dan/rails_projects/sample_app/app/helpers/static_pages_helper.rb",
 		"/home/dan/rails_projects/sample_app/spec/spec_helper.rb",
 		"/home/dan/rails_projects/sample_app/app/assets/stylesheets/static_pages.css.scss",
-		"/home/dan/rails_projects/sample_app/app/views/layouts/_footer.html.erb",
 		"/home/dan/rails_projects/sample_app/example_user.rb",
 		"/home/dan/rails_projects/sample_app/app/assets/stylesheets/application.css",
 		"/home/dan/rails_projects/sample_app/app/views/static_pages/about.html.erb",
@@ -169,6 +194,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -176,6 +202,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"redirect",
+			"user signup with",
+			"authorization",
+			"ssl",
 			"btn-primary",
 			"btn",
 			"btn-primary",
@@ -198,55 +228,83 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "features/signing_in.feature",
+					"file": "spec/models/micropost_spec.rb",
 					"settings":
 					{
-						"buffer_size": 386,
+						"buffer_size": 1158,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								375,
-								375
+								814,
+								814
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Cucumber/Cucumber Plain Text Feature.tmLanguage",
-							"tab_size": 2
+							"syntax": "Packages/User/RSpec.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 255.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/helpers/application_helper.rb",
+					"file": "spec/models/user_spec.rb",
 					"settings":
 					{
-						"buffer_size": 517,
+						"buffer_size": 4896,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								361,
-								361
+								4639,
+								4639
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+							"syntax": "Packages/User/RSpec.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 567.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "spec/factories.rb",
+					"settings":
+					{
+						"buffer_size": 298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								298,
+								298
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/RSpec.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -257,23 +315,23 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 2,
-					"file": "features/step_definitions/authentication_steps.rb",
+					"buffer": 3,
+					"file": "app/models/micropost.rb",
 					"settings":
 					{
-						"buffer_size": 776,
+						"buffer_size": 486,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								245,
-								245
+								485,
+								485
 							]
 						],
 						"settings":
@@ -287,24 +345,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "spec/requests/authentication_pages_spec.rb",
+					"buffer": 4,
+					"file": "app/models/user.rb",
 					"settings":
 					{
-						"buffer_size": 1082,
+						"buffer_size": 1059,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								29
+								932,
+								932
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/User/RSpec.tmLanguage",
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -344,7 +402,7 @@
 		"cols":
 		[
 			0.0,
-			0.520911127708,
+			0.52486711606,
 			1.0
 		],
 		"rows":
@@ -369,12 +427,188 @@
 		"selected_items":
 		[
 			[
-				"authenticato",
+				"facto",
+				"spec/factories.rb"
+			],
+			[
+				"_",
+				"app/views/users/_fields.html.erb"
+			],
+			[
+				"utilit",
+				"spec/support/utilities.rb"
+			],
+			[
+				"userpages",
+				"spec/requests/user_pages_spec.rb"
+			],
+			[
+				"user_spec",
+				"spec/models/user_spec.rb"
+			],
+			[
+				"user.rb",
+				"app/models/user.rb"
+			],
+			[
+				"home",
+				"app/views/static_pages/home.html.erb"
+			],
+			[
+				"application.html",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"index",
+				"app/views/users/index.html.erb"
+			],
+			[
+				"migratio",
+				"db/migrate/20121219131653_create_microposts.rb"
+			],
+			[
+				"micro",
+				"db/migrate/20121219131653_create_microposts.rb"
+			],
+			[
+				"sessions",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"applicationhelp",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"author",
 				"spec/requests/authentication_pages_spec.rb"
+			],
+			[
+				"usercontroll",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"userpagesp",
+				"spec/requests/user_pages_spec.rb"
+			],
+			[
+				"userspec",
+				"spec/models/user_spec.rb"
+			],
+			[
+				"authenti",
+				"spec/requests/authentication_pages_spec.rb"
+			],
+			[
+				"spec",
+				"spec/requests/user_pages_spec.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"edit",
+				"app/views/users/edit.html.erb"
+			],
+			[
+				"new",
+				"app/views/sessions/new.html.erb"
+			],
+			[
+				"userpage",
+				"spec/requests/user_pages_spec.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"_header",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"application",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"_user",
+				"app/views/users/_user.html.erb"
+			],
+			[
+				"factor",
+				"spec/factories.rb"
+			],
+			[
+				"sample_da",
+				"lib/tasks/sample_data.rake"
+			],
+			[
+				"migrate",
+				"db/migrate/20121218111352_add_admin_to_users.rb"
+			],
+			[
+				"sessionshelper",
+				"app/helpers/sessions_helper.rb"
 			],
 			[
 				"applicationhelper",
 				"app/helpers/application_helper.rb"
+			],
+			[
+				"helper",
+				"app/helpers/sessions_helper.rb"
+			],
+			[
+				"header",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"custom",
+				"app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				"controller",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"sessionscont",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"utili",
+				"spec/support/utilities.rb"
+			],
+			[
+				"sessionshelp",
+				"app/helpers/sessions_helper.rb"
+			],
+			[
+				"authentica",
+				"spec/requests/authentication_pages_spec.rb"
+			],
+			[
+				"config",
+				"config/application.rb"
+			],
+			[
+				"utiliti",
+				"spec/support/utilities.rb"
+			],
+			[
+				"authenticat",
+				"spec/requests/authentication_pages_spec.rb"
+			],
+			[
+				"sessionscon",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"specathen",
+				"spec/requests/authentication_pages_spec.rb"
+			],
+			[
+				"authenticato",
+				"spec/requests/authentication_pages_spec.rb"
 			],
 			[
 				"authenticatio",
@@ -389,16 +623,8 @@
 				"app/controllers/users_controller.rb"
 			],
 			[
-				"userpages",
-				"spec/requests/user_pages_spec.rb"
-			],
-			[
 				"application.js",
 				"app/assets/javascripts/application.js"
-			],
-			[
-				"_header",
-				"app/views/layouts/_header.html.erb"
 			],
 			[
 				"applicationcontrol",
@@ -413,10 +639,6 @@
 				"app/helpers/sessions_helper.rb"
 			],
 			[
-				"new",
-				"app/views/sessions/new.html.erb"
-			],
-			[
 				"static",
 				"spec/requests/static_pages_spec.rb"
 			],
@@ -425,20 +647,8 @@
 				"spec/requests/authentication_pages_spec.rb"
 			],
 			[
-				"user",
-				"app/models/user.rb"
-			],
-			[
 				"usr",
 				"spec/models/user_spec.rb"
-			],
-			[
-				"userspec",
-				"spec/models/user_spec.rb"
-			],
-			[
-				"migrate",
-				"db/migrate/20121204102214_add_remember_token_to_users.rb"
 			],
 			[
 				"sessionhelper",
@@ -449,20 +659,8 @@
 				"app/controllers/application_controller.rb"
 			],
 			[
-				"gem",
-				"Gemfile"
-			],
-			[
-				"controller",
-				"app/controllers/sessions_controller.rb"
-			],
-			[
 				"routes",
 				"config/routes.rb"
-			],
-			[
-				"spec",
-				"spec/requests/user_pages_spec.rb"
 			],
 			[
 				"applica",
@@ -481,16 +679,8 @@
 				"app/views/users/show.html.erb"
 			],
 			[
-				"custom",
-				"app/assets/stylesheets/custom.css.scss"
-			],
-			[
 				"local",
 				"config/locales/en.yml"
-			],
-			[
-				"application",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"users_help",
@@ -499,10 +689,6 @@
 			[
 				"production",
 				"config/environments/production.rb"
-			],
-			[
-				"usercontroll",
-				"app/controllers/users_controller.rb"
 			],
 			[
 				"userhelp",
@@ -515,10 +701,6 @@
 			[
 				"user_help",
 				"app/helpers/users_helper.rb"
-			],
-			[
-				"user_spec",
-				"spec/requests/user_pages_spec.rb"
 			],
 			[
 				"cust",
@@ -535,10 +717,6 @@
 			[
 				"application_helper",
 				"app/helpers/application_helper.rb"
-			],
-			[
-				"home",
-				"app/views/static_pages/home.html.erb"
 			],
 			[
 				"contact",
@@ -567,10 +745,6 @@
 			[
 				"home.",
 				"app/views/static_pages/home.html.erb"
-			],
-			[
-				"application.html",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"staticpagecont",
@@ -627,10 +801,6 @@
 			[
 				"",
 				"app/views/static_pages/home.html.erb"
-			],
-			[
-				"micro",
-				"app/models/micropost.rb"
 			]
 		],
 		"width": 0.0
@@ -646,7 +816,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 196.0,
+	"side_bar_visible": false,
+	"side_bar_width": 256.0,
 	"status_bar_visible": true
 }
