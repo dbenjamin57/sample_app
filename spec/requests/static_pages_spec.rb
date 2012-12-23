@@ -34,6 +34,26 @@ describe "Static pages" do
 					page.should have_selector("li##{item.id}", text: item.content)
 				end
 			end
+
+			it "should increase micropost count after addition of valid" do
+				fill_in "micropost_content", with: "bla bla"
+				click_button "Post"
+
+				page.should have_content('3 microposts')
+			end
+
+			describe "pagination microposts" do
+				
+				before do 
+					40.times { |n| FactoryGirl.create(:micropost, user: user, content: "#{n}") }
+					visit root_path
+				end
+
+				it "should paginate the feed" do
+					#this means that post number 31 will not appear (2 already created before)
+					page.should_not have_selector ('li#12')
+				end
+			end
 		end
 	end
 
